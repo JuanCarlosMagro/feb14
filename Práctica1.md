@@ -45,7 +45,7 @@ pip install ansible-core requests google-auth
 ansible --version
 ```
 
-> **Consejo práctico:** Para no tener que recordar la ruta del entorno virtual cada vez, podemos crear un alias en nuestro `.bashrc`:
+> **Nota:** Para no tener que recordar la ruta del entorno virtual cada vez, podemos crear un alias en nuestro `.bashrc`:
 
 ```bash
 echo 'alias ansenv="source ~/ansible-venv/bin/activate"' >> ~/.bashrc
