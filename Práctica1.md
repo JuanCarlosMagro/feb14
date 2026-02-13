@@ -1,4 +1,4 @@
-# Gestión de Google Cloud Compute Engine con Ansible dentro de una VPC
+# Gestión de Google Cloud Compute Engine con Ansible
 
 ---
 
