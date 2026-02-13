@@ -179,7 +179,7 @@ Configuramos los siguientes secretos:
 
 ---
 
-## 8. Paso 8 — GitHub Actions Workflow
+## 7. Paso 7 — GitHub Actions Workflow
 
 ### `.github/workflows/build-deploy.yml`
 
@@ -276,16 +276,16 @@ jobs:
 ### Notas sobre el Workflow
 
 - Se etiquetan las imágenes tanto con el SHA del commit (trazabilidad) como con `latest` (conveniencia).
-- En producción se debería hacer un `git pull` en el Control Node asegurando que los playbooks y el inventario estén siempre actualizados. En esta práctica, al usar el nodo de control también como repositorio git para hacer push, no lo complicamos mas.
+- En producción se debería hacer un `git pull` en el Control Node asegurando que los playbooks y el inventario estén siempre actualizados. En este ejercicio, al usar el nodo de control también como repositorio git para hacer push, no lo complicamos mas.
 - Se usa `google-github-actions/auth@v2` (versión actualizada).
 
 ---
 
-## 9. Paso 9 — Playbook de Ansible (Deploy)
+## 8. Paso 8 — Playbook de Ansible (Deploy)
 
 Este playbook se ejecuta en el Control Node y despliega los contenedores en la VM de destino.
 
-### `ansible/deploy-bot.yml`
+### `playbooks/deploy-bot.yml`
 
 ```yaml
 ---
